@@ -105,3 +105,77 @@
   </footer>
 </body>
 </html>
+
+
+<form action="https://echo.htmlacademy.ru/">
+  <h1>Подбор программы</h1>
+  <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <fieldset class="">
+    <label>
+      <span>ИМЯ:*</span>
+      <input type="text" name="cat-name" placeholder="Барсик">
+    </label>
+    <label>
+      <span>Вес (кг):*</span>
+      <input type="text" name="cat-weight" placeholder="7">
+    </label>
+    <label>
+      <span>Возраст (лет):</span>
+      <input name="cat-age" type="text" placeholder="7">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>
+      <input type="checkbox" checked>
+      <span>Похудение</span>
+    </label>
+    <label>
+      <input type="checkbox">
+      <span>Набор массы</span>
+    </label>
+    <label>
+      <input type="checkbox">
+      <span>Не знаю (Нужен ваш совет)</span>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <h3>Контактные данные (владельца кота)</h3>
+    <label>
+      <span>E-mail:*</span>
+      <input type="email" name="e-mail" placeholder="kuklachev@gmail.com">
+    </label>
+    <label>
+      <span>Телефон:*</span>
+      <input type="number" name="phone-number" placeholder="8 (960) 900-60-90">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <h3>Комментарий</h3>
+    <textarea type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+  </fieldset> 
+
+  <fieldset>
+    <h3>Дополнительно</h3>
+    <label>
+      <span>Сахарозаменитель</span>
+      <input type="checkbox" checked>
+    </label>
+    <label>
+      <span>Питьевая вода</span>
+      <input type="checkbox">
+    </label>
+    <label>
+      <span>Молоко</span>
+      <input type="checkbox">
+    </label>
+    <label>
+      <span>Витамины</span>
+      <input type="checkbox">
+    </label>
+  </fieldset>
+  <button type="submit">Отправить заявку</button>
+  <small>* — Обязательные поля</small>
+</form>
