@@ -1,0 +1,33 @@
+.logo:not(.logo--index) {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image:not(.logo__image--footer) {
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71px;
+  }
+}
+
+.logo__sign {
+  width: 101px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
+}

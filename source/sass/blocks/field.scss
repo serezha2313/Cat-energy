@@ -1,0 +1,96 @@
+.field {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 13px;
+  color: $color-gray-700;
+  font-family: $font-heading;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field__input {
+  padding: 13px 20px 13px 15px;
+	border: 1px solid #e7e7e7;
+  font-family: $font-heading;
+  font-size: 16px;
+	font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: $color-gray-250;
+  }
+
+  &:focus {
+    outline: 2px solid $color-gray-700;
+    outline-offset: -2px;
+
+  }
+
+  &:invalid {
+    outline: 2px solid $color-error;
+    outline-offset: -2px;
+  }
+}
+
+.field__input--icon {
+  padding: 13px 45px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 50px 10px 20px;
+  }
+
+  &:focus + .field__icon {
+    color: $color-green;
+  }
+
+  &:invalid + .field__icon {
+    color: $color-error;
+  }
+}
+
+.field__input--comment {
+  min-width: 100%;
+	min-height: 150px;
+	padding: 9px 12px 0 15px;
+	resize: none;
+  grid-column: 1 / -1;
+	
+	@media (min-width: $tablet-width) {
+		padding: 10px 19px 0 19px;
+	}
+}
+
+.field__lead {
+  align-self: center;
+}
+
+.field__icon {
+  position: absolute;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
+}

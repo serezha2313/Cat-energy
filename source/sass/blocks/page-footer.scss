@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: $color-gray-50;
+}
+
+.page-footer__container {
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding: 39px 0 22px;
+  }
+
+	@media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+  }
+
+}
+
+.page-footer__logo {
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 52px;
+  }
+}
+
+

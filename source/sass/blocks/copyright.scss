@@ -1,0 +1,31 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: $color-gray-700;
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+	
+	@media (max-width: $mobile-width-only) {
+		justify-content: space-between;
+	} 
+
+	&:hover .copyright__icon {
+		color: $color-green;
+	}
+	
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.copyright__icon {
+	color: #666666;
+
+	@media (min-width: $tablet-width) {
+		margin-left: 22px;
+	}
+}

@@ -1,0 +1,84 @@
+.offer {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 186px 61px 43px 58px;
+  background-image: url(../images/catalog/offer-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/catalog/offer-mobile-@2x.jpg);    
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    padding: 71px 124px 69px 422px;
+    background-image: url(../images/catalog/offer-tablet.jpg);
+    text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/catalog/offer-tablet-@2x.jpg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 184px 43px 42px 41px;
+    background-image: url(../images/catalog/offer-desktop.jpg);
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/catalog/offer-desktop-@2x.jpg);  
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $color-green;
+    opacity: 0.85;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height:80px;
+    background-image: url(../images/catalog/icon-gift-mobile.svg);
+    top: 58px;
+    left: 101px;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height:82px;
+      background-image: url(../images/catalog/icon-gift-tablet.svg);
+      top: 57px;
+      left: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url(../images/catalog/icon-gift-tablet.svg);
+      top: 55px;
+      left: 84px;
+    }
+  }
+}
+
+.offer__text {
+  position: inherit;
+  color: $color-white;
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  z-index: 2;
+}

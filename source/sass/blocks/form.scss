@@ -1,0 +1,62 @@
+.form__container {
+	@media (min-width: $tablet-width) and (max-width: 1439px) {
+		width: 630px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 80px;
+	}
+}
+
+.form__button {
+	width: 100%;
+	margin-bottom: 21px;
+	padding: 10px 0;
+	font-family: $font-heading;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 0;
+		padding: 16px;
+    font-size: 20px;
+	}
+}
+
+.form__footer {
+	margin-bottom: 32px;
+	text-align: center;
+
+	@media (min-width: $tablet-width) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 72px;
+		gap: 60px;
+	}
+
+	@media (min-width: $desktop-width) {
+		gap: 80px;
+		grid-column: 1 / -1;
+	}
+}
+
+.form__additional {
+	font-family: $font-body;
+	font-size: 14px;
+	color: $color-black;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+
+	@media (min-width: $tablet-width) {
+		font-size: 16px;
+		align-self: center;
+		text-align: start;
+	}
+}
